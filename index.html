@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid no-gutters removepadding">
+      <div class="main">
+        <!-- SIDEBAR -->
+        <div class="sidebar_bg">
+          <div class="sidebar">
+            <!-- LOGO & AVATAR -->
+            <div class="head">
+              <div class="logo">
+                <img src="./img/logo.png" alt="" />
+              </div>
+
+              <div class="avatar">
+                <img src="./img/avatar.png" alt="" />
+              </div>
+              <div class="arrow">
+                <img src="./img/down_arrow.png" alt="" />
+              </div>
+            </div>
+            <!-- END LOGO & AVATAR-->
+            <!-- DIVIDER -->
+            <div class="divider">
+              <div class="yellow-dash"></div>
+              <div class="thin-line"></div>
+            </div>
+            <!-- TOKEN BALANCE -->
+            <div class="tokenbalance">
+              <p class="title">Token Balance</p>
+              <div class="bal">
+                AFK 22
+              </div>
+            </div>
+            <!-- END TOKEN BALANCE -->
+            <!-- TOKEN BUTTONS -->
+            <div class="tokenbuttons">
+              <a href="">
+                <div class="buttonIcon">
+                  <img src="./img/icon-buy.png" alt="" />
+                  <p>Buy</p>
+                </div>
+              </a>
+              <a href="">
+                <div class="buttonIcon">
+                  <img src="./img/icon-withdraw.png" alt="" />
+                  <p>Withdraw</p>
+                </div>
+              </a>
+              <a href="">
+                <div class="buttonIcon">
+                  <img src="./img/icon-withdraw.png" alt="" />
+                  <p>Transfer Token</p>
+                </div>
+              </a>
+            </div>
+            <!-- END TOKEN BUTTONS -->
+            <!-- MENU BUTTONS -->
+            <div class="menubuttons">
+              <div
+                class="menuHeader header-business"
+                onclick="toggleBusiness()"
+              >
+                Your Business
+              </div>
+              <div class="businessList">
+                <ul class="menuList businessMenuList">
+                  <li><a href="" class="link-active">Dashboard</a></li>
+                  <li><a href="">Transition</a></li>
+                  <li><a href="">Wallet</a></li>
+                  <li><a href="">Payout</a></li>
+                  <li><a href="">Chat</a></li>
+                </ul>
+              </div>
+
+              <div
+                class="menuHeader menuHeaderInactive header-services"
+                onclick="toggleServices()"
+              >
+                Other Services
+              </div>
+              <div class="serviceList">
+                <ul class="menuList serviceMenuList">
+                  <li><a href="" class="link-active">Mart</a></li>
+                  <li><a href="">Logistics</a></li>
+                  <li><a href="">Loan</a></li>
+                  <li><a href="">Investments</a></li>
+                </ul>
+              </div>
+              <div
+                class="menuHeader menuHeaderInactive header-support"
+                onclick="toggleSupport()"
+              >
+                Support
+              </div>
+              <div class="supportList">
+                <ul class="menuList supportMenuList">
+                  <li><a href="" class="link-active">Contact Us</a></li>
+                  <li><a href="">Documentation</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- END MENU BUTTONS -->
+          </div>
+          <div class="cloud"></div>
+        </div>
+        <!-- END SIDEBAR -->
+        <!-- MAIN BODY -->
+        <div class="container paddingTop50">
+          <!-- TOP CARDS -->
+          <div class="row">
+            <div class="col-md-4">
+              <div class="bigCard1">
+                <div class="topRow">
+                  <img src="./img/logo-africoin.png" alt="" />
+                  <div class="walletinfo">
+                    <p class="walletName">Africoin Wallet</p>
+                    <p class="walletAmount">22</p>
+                  </div>
+                </div>
+                <div class="bottomRow">
+                  <div class="colInfo">
+                    <p>send to user ></p>
+                    <p>send to wallet ></p>
+                  </div>
+                  <div class="colInfo">
+                    <p>remove from wallet ></p>
+                    <p>purchase coin ></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="bigCard2">
+                <div class="topRow">
+                  <img src="./img/logo-btc.png" alt="" />
+                  <div class="walletinfo">
+                    <p class="walletName">Bitcoin Wallet</p>
+                    <p class="walletAmount">0.234</p>
+                  </div>
+                </div>
+                <div class="bottomRow">
+                  <div class="colInfo">
+                    <p>import BTC wallet ></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="bigCard3">
+                <div class="topRow">
+                  <img src="./img/logo-eth.png" alt="" />
+                  <div class="walletinfo">
+                    <p class="walletName">Ethereum Wallet</p>
+                    <p class="walletAmount">0.214</p>
+                  </div>
+                </div>
+                <div class="bottomRow">
+                  <div class="colInfo">
+                    <p>import ETH wallet ></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END TOP CARDS -->
+          <!-- DASHBODY -->
+          <div class="row">
+            <div class="col-md-8">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="categorycard">
+                    <div class="base">
+                      <p>Mobile TopUp</p>
+                      <div class="divider"></div>
+                      <p class="desc">Buy & Recharge &emsp; ></p>
+                    </div>
+                    <div class="iconHolder">
+                      <img src="./img/icon-mobiletopup.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="categorycard">
+                    <div class="base">
+                      <p>Data Subscription</p>
+                      <div class="divider"></div>
+                      <p class="desc">Buy & Recharge &emsp; ></p>
+                    </div>
+                    <div class="iconHolder">
+                      <img src="./img/icon-data.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="categorycard">
+                    <div class="base">
+                      <p>Cable TV</p>
+                      <div class="divider"></div>
+                      <p class="desc">Pay Cable Bills &emsp; ></p>
+                    </div>
+                    <div class="iconHolder">
+                      <img src="./img/icon-cable.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="categorycard">
+                    <div class="base">
+                      <p>Cable TV</p>
+                      <div class="divider"></div>
+                      <p class="desc">Online Shopping &emsp; ></p>
+                    </div>
+                    <div class="iconHolder">
+                      <img src="./img/icon-shopping.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="categorycard">
+                    <div class="base">
+                      <p>Utilities</p>
+                      <div class="divider"></div>
+                      <p class="desc">Pay Utility Bills &emsp; ></p>
+                    </div>
+                    <div class="iconHolder">
+                      <img src="./img/icon-utility.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="categorycard">
+                    <div class="base">
+                      <p>Travel & Hotel</p>
+                      <div class="divider"></div>
+                      <p class="desc">
+                        Airline tickets & hotel reservation &emsp; >
+                      </p>
+                    </div>
+                    <div class="iconHolder">
+                      <img src="./img/icon-hotel.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END DASHBODY -->
+        </div>
+        <!-- END MAIN BODY -->
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
