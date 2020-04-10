@@ -16,6 +16,25 @@
   font-family: "OSBOLD";
   src: url("../font/OpenSans-Bold.ttf");
 }
+
+.fixedNav {
+  display: none;
+  width: 100%;
+  position: fixed;
+  background-color: #131c38;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  padding: 20px;
+}
+.fixedNav #navbutton {
+  margin-left: 20px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  filter: invert();
+}
 .paddingTop50 {
   padding-top: 50px;
 }
@@ -26,9 +45,18 @@
 .main {
   display: flex;
 }
+.mainTitle {
+  font-size: 30px;
+}
+.mainbody {
+  height: 100vh;
+  overflow-y: scroll;
+}
 .sidebar_bg {
   width: 250px;
   height: 100vh;
+  display: block;
+  position: relative;
   background: rgb(11, 24, 70);
   padding-left: 0px;
   padding-right: 0px;
@@ -51,9 +79,15 @@
 }
 .head {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .logo {
-  width: 60%;
+  width: 200px;
+}
+.aside {
+  display: flex;
+  align-items: center;
 }
 .logo > img {
   width: 80%;
@@ -66,10 +100,24 @@
   width: 15%;
 }
 .avatar > img {
-  width: 100%;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
 .arrow {
   width: 5%;
+}
+.closebutton {
+  cursor: pointer;
+  display: none;
+}
+.closebutton img {
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  filter: invert();
 }
 
 .arrow > img {
@@ -135,6 +183,7 @@
   margin-top: 15px;
 }
 .menubuttons > .menuHeader {
+  cursor: pointer;
   padding: 10px;
   margin-left: 60px;
   margin-top: 15px;
@@ -158,7 +207,7 @@
   padding-left: 80px;
 }
 .businessList {
-  height: 190px;
+  height: 0px;
   transition: 0.2s ease-in;
   overflow: hidden;
 }
@@ -181,12 +230,14 @@
 }
 .link-active {
   color: #ffd343 !important;
+  font-weight: bold;
 }
 .menubuttons > .menuList a:hover {
   color: #ffd343;
 }
 .bigCard1 {
   min-height: 200px;
+  margin-bottom: 20px;
   background: rgb(11, 24, 70);
   background: linear-gradient(
     129deg,
@@ -201,6 +252,7 @@
 }
 .bigCard2 {
   min-height: 200px;
+  margin-bottom: 20px;
   background: rgb(255, 211, 67);
   background: linear-gradient(
     129deg,
@@ -215,6 +267,7 @@
 }
 .bigCard3 {
   min-height: 200px;
+  margin-bottom: 20px;
   background: rgb(22, 39, 104);
   background: linear-gradient(
     129deg,
@@ -264,6 +317,11 @@
   background-color: rgba(255, 255, 255, 0.116);
   width: 100%;
 }
+.dividerdark {
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.116);
+  width: 100%;
+}
 .categorycard {
   position: relative;
   margin-top: 20px;
@@ -307,4 +365,62 @@
   margin-top: 10px;
   font-size: 12px;
   font-family: "OSLIGHT" !important;
+}
+.recentTitle {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+}
+.recentTitle img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+.transactionsList {
+  margin-top: 20px;
+  min-height: 350px;
+  display: flex;
+  background-color: #ebebeb;
+  padding: 20px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.noTransaction {
+  text-align: center;
+}
+.noTransaction img {
+  height: 20px;
+  width: 20px;
+}
+
+.viewall {
+  text-decoration: none;
+  color: #131c38;
+  display: inline-block;
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 991px) {
+  .fixedNav {
+    display: flex;
+  }
+  .closebutton {
+    display: block;
+  }
+  .sidebar_bg {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+  }
+  .cloud {
+    display: none;
+  }
+  .paddingTop50 {
+    padding-top: 90px;
+  }
 }

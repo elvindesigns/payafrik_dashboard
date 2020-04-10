@@ -64,3 +64,12 @@ function toggleSupport() {
   headerServices.classList.add("menuHeaderInactive");
   headerSupport.classList.remove("menuHeaderInactive");
 }
+
+function openMenu() {
+  let sidebar = document.querySelector(".sidebar_bg");
+  sidebar.style.display = "block";
+}
+function closeMenu() {
+  let sidebar = document.querySelector(".sidebar_bg");
+  sidebar.style.display = "none";
+}
