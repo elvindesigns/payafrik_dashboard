@@ -570,6 +570,13 @@
   .fixedNav {
     display: flex;
   }
+  .centerVert {
+    margin-top: 100px;
+    display: block;
+  }
+  .purchaseCard img {
+    object-position: center center;
+  }
   .closebutton {
     display: block;
   }
