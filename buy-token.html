@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy Token</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid no-gutters removepadding">
+      <div class="main">
+        <!-- SIDEBAR -->
+        <div class="sidebar_bg">
+          <div class="sidebar">
+            <!-- LOGO & AVATAR -->
+            <div class="head">
+              <div class="logo">
+                <img src="./img/logo.png" alt="" />
+              </div>
+
+              <div class="aside">
+                <div class="avatar">
+                  <img src="./img/avatar.png" alt="" />
+                </div>
+
+                <div onclick="closeMenu()" class="closebutton">
+                  <img src="./img/close.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <!-- END LOGO & AVATAR-->
+            <!-- DIVIDER -->
+            <div class="divider">
+              <div class="yellow-dash"></div>
+              <div class="thin-line"></div>
+            </div>
+            <!-- TOKEN BALANCE -->
+            <div class="tokenbalance">
+              <p class="title">Token Balance</p>
+              <div class="bal">
+                AFK 22
+              </div>
+            </div>
+            <!-- END TOKEN BALANCE -->
+            <!-- TOKEN BUTTONS -->
+            <div class="tokenbuttons">
+              <a href="#">
+                <div class="buttonIcon activeTokenbutton">
+                  <img src="./img/icon-buy.png" alt="" />
+                  <p>Buy</p>
+                </div>
+              </a>
+              <a href="">
+                <div class="buttonIcon">
+                  <img src="./img/icon-withdraw.png" alt="" />
+                  <p>Withdraw</p>
+                </div>
+              </a>
+              <a href="">
+                <div class="buttonIcon">
+                  <img src="./img/icon-withdraw.png" alt="" />
+                  <p>Transfer Token</p>
+                </div>
+              </a>
+            </div>
+            <!-- END TOKEN BUTTONS -->
+            <!-- MENU BUTTONS -->
+            <div class="menubuttons">
+              <div
+                class="menuHeader header-business"
+                onclick="toggleBusiness()"
+              >
+                Your Business
+              </div>
+              <div class="businessList">
+                <ul class="menuList businessMenuList">
+                  <li><a href="./index.html">Dashboard</a></li>
+                  <li><a href="">Transactions</a></li>
+                  <li><a href="">Wallet</a></li>
+                  <li><a href="">Payout</a></li>
+                  <li><a href="">Chat</a></li>
+                </ul>
+              </div>
+
+              <div
+                class="menuHeader menuHeaderInactive header-services"
+                onclick="toggleServices()"
+              >
+                Other Services
+              </div>
+              <div class="serviceList">
+                <ul class="menuList serviceMenuList">
+                  <li>
+                    <a href="./category.html" class="link-active">Mart</a>
+                  </li>
+                  <li><a href="">Logistics</a></li>
+                  <li><a href="">Loan</a></li>
+                  <li><a href="">Investments</a></li>
+                </ul>
+              </div>
+              <div
+                class="menuHeader menuHeaderInactive header-support"
+                onclick="toggleSupport()"
+              >
+                Support
+              </div>
+              <div class="supportList">
+                <ul class="menuList supportMenuList">
+                  <li><a href="">Contact Us</a></li>
+                  <li><a href="">Documentation</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- END MENU BUTTONS -->
+          </div>
+          <div class="cloud"></div>
+        </div>
+        <!-- END SIDEBAR -->
+        <!-- MAIN BODY -->
+        <div class="fixedNav">
+          <div class="logo">
+            <img src="./img/logo.png" alt="" />
+          </div>
+
+          <div class="aside">
+            <div class="avatar">
+              <img src="./img/avatar.png" alt="" />
+            </div>
+            <img
+              onclick="openMenu()"
+              id="navbutton"
+              src="./img/menu-2.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <!-- MAIN BODY -->
+        <div class="container mainbody centerVert">
+          <!-- <div class="paddingTop20"></div> -->
+          <!-- DASHBODY -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row purchaseCard centerCol">
+                <div class="col-md-4 removepadding">
+                  <img src="./img/takeoff.png" alt="" />
+                </div>
+                <div class="col-md-8">
+                  <div class="formContent">
+                    <p class="formTitle">Purchase AFK Token</p>
+                    <div class="divider">
+                      <div class="yellow-dash"></div>
+                      <div class="thin-line"></div>
+                    </div>
+                    <p class="desc">
+                      You can use AFK tokens to carry out transactions on this
+                      platform from purchasing utilities to other items in our
+                      mart. you can also transfer them to your AFK mastercard
+                      and make payments on physical machines or withdraw from an
+                      ATM.
+                    </p>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="amountHolder">
+                          <p class="info">BALANCE</p>
+                          <p class="amount">22.00</p>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="amountHolder">
+                          <p class="info">PREPAID</p>
+                          <p class="amount">0.00</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="divider">
+                      <div class="yellow-dash"></div>
+                      <div class="thin-line"></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="formbutton">
+                          <p>> BUY WITH CASH</p>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="formbutton">
+                          <p class="yellowText">> BUY WITH CRYPTO</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END DASHBODY -->
+        </div>
+        <!-- END MAIN BODY -->
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+    <script>
+      // toggleServices();
+    </script>
+  </body>
+</html>
